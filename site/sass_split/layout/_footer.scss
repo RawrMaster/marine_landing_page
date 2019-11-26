@@ -1,0 +1,153 @@
+
+
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+/* ------------------  Footer Styles -----------------  */
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+
+.footer {
+    
+    /* ---------------------------------------------------  */
+    /* ------------------  Tweet Styles ------------------  */
+    /* ---------------------------------------------------  */
+    
+        .tweet {
+            background-color: $highlight_color;
+            height: 120px;
+    
+    
+        /* -------- main  text -------- */
+            p {
+                color: #ebebeb;
+                font: {
+                    family: $main_font;
+                    size: 16px;
+                    weight: 400;
+                }
+                display: inline;
+            }
+    
+        /* ----- @circles, by Quill ---- */
+    
+            span {
+                color: #bbdbef;
+                font: {
+                    family: $main_font;
+                    style: italic;
+                }    
+            }
+    
+        /* ----- 5 minutes ago ---- */
+    
+            h4 {
+                color: #bbdbef;
+                font: {
+                    family: $main_font;
+                    size:12px;
+                    style: italic;
+                }    
+            }
+    
+            button {
+                margin: auto 7px;
+                border:none;
+                background: none;
+                cursor: $cursor;
+            }
+        }   
+    
+    
+    }
+    
+        
+/* ---------------------------------------------------  */
+/* -------------------  Footer Info ------------------  */
+/* ---------------------------------------------------  */
+.footer_info {
+
+    border: 1px solid rgba(245, 245, 245, 0.08);
+    background-color: #19242a;
+
+    .footer_marine {
+        margin: 15px 0;     
+    }
+    
+ 
+
+    .text {
+        
+        img {
+            margin-right: 20px;
+        }
+
+        p {
+            color: #7ca1b3;
+            font: {
+                family: $main_font;
+                size: 12px;
+                weight: 400;
+         }
+        }
+
+        span {
+            color: #bdd2dc;
+            font: {
+                family: $main_font;
+                size: 13px;
+                style: italic;
+            }
+        }
+        h2 {
+            color: #547e93;
+            font: {
+                family: 'Montserrat', sans-serif;
+                size: 20px;
+                weight: 400;
+            }
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+    
+        h3 {
+            margin: 20px 0;
+            color: #7ca1b3;
+            font: {
+                family: $main_font;
+                size: 18px;
+                weight: 300;
+            }
+    
+        }
+
+        h6 {
+            color: #7ca1b3;
+            font: {
+                family: $main_font;
+                size: 10px;
+                weight: 400;
+            }
+            text-transform: uppercase;
+        }
+
+        hr {
+            width: 271px;
+            background-color: $dark_text;
+        }
+    }
+
+}
+
+.copyright {
+    height: 90px;
+    background-color: #141d22;
+
+    p {
+        color: #547e93;
+        font: {
+            family: $main_font;
+            size: 12px;
+            weight: 400;
+        }    
+    }
+}

@@ -1,0 +1,96 @@
+
+
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+/* ---------------  Projects Styles ------------------  */
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+
+.projects {
+
+    padding-bottom: 30px;
+    background-color: #2a3b45; 
+
+    .info {
+        padding: 0;
+        border: 1px solid $dark_text;   
+
+        &:hover {
+            background-color: #2f424d;
+        }
+    }
+
+    h2 {
+        padding-top: 40px;
+        color: #c4d3de;
+        font: {
+            family: $main_font;
+            size: 30px;
+            weight: 300;
+        }   
+        text-align: center;
+    }
+
+    h3 {
+        padding-bottom: 40px;
+        color: #658190;
+        font: {
+            family: $main_font;
+            size: 14px;
+            weight: 400;
+        }    
+        text-align: center;
+    }
+
+    h4, h5 {        
+        padding-left:20px;
+    }
+
+    h4 {
+        color: #f5f7f8;
+        font: {
+            family: $main_font;
+            size: 18px;
+            weight: 300;
+        }    
+
+    }
+
+    h5 {
+        color: #97a4ad;
+        font: {
+            family: $main_font;
+            size: 11px;
+        }
+        text-transform: uppercase;
+    }
+
+      
+    .likes {
+
+        button {   
+            
+            /* for button text */
+            color: #b0bac0;
+            font-family: $main_font;
+            font-size: 11px;
+            font-weight: 300;  
+            /*-----------------*/
+
+            margin-bottom: 20px;
+            padding-left: 30px;
+            width: 45px;
+            height: 20px;
+            border:none;
+            background: url("../img/projects/heart_grey.png") no-repeat;
+
+            &:hover {
+                background: url("../img/projects/heart_red.png") no-repeat;
+                cursor: $cursor;
+            }
+    }
+
+    }
+
+
+}

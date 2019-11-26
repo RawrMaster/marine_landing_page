@@ -1,0 +1,170 @@
+
+
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+/* ---------------   Header Styles -------------------  */
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+
+
+.marine {
+    height: auto;
+    color: #0b2b33;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.call_us {
+    text-align:right;
+    margin: 20px 0;
+    color: #0b2b33;
+    font: {
+        family: $main_font;
+        size: 11px;
+        weight: 400;
+    }    
+    text-transform: uppercase;
+}
+
+.social {
+    a {
+        padding: 0 7px;
+        &:hover {
+            text-decoration-line: none;
+        }
+    }
+}
+
+.slash {
+    margin: 0 6px;
+}
+
+/* ---------------------------------------------------  */
+/* -----------------   Navigation --------------------  */
+/* ---------------------------------------------------  */
+
+.navigation {
+
+    padding-top: 15px;
+    background-color: #accdda;
+    nav {
+        ul {
+            li {    
+            list-style-type: none;
+                img {
+                    padding-left: 10px;
+                    
+                }
+                a {
+                    padding-right:40px;
+                    font: {
+                        family: $main_font;
+                        size: 11px;
+                        weight: 400;
+                        
+                    }
+                    color: $dark_text;
+                    text-transform: uppercase;
+                &:hover {
+                    color: $highlight_color;
+                    text-decoration-line: none;
+                }
+                    
+                }
+
+            }
+        }
+    }
+}    
+
+/* ---------------------------------------------------  */
+/* -----------------   Search form --------------------  */
+/* ---------------------------------------------------  */
+
+.search {
+    text-decoration: none;
+    cursor: $cursor;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+  
+    &:target {
+    visibility: visible;
+    opacity: 1;
+    }
+  }
+  
+  .popup {
+    position: absolute;
+    right: 140px;
+    top: 120px;
+      
+    .close {
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+        position: absolute;
+        right: -25px;
+        top: 10px;
+    }
+
+    .content {
+        max-height: 30%;
+        overflow: auto;
+    }
+  }
+
+.search_bubble {
+    position: relative;
+    background-color: $dark_text;
+    /* text */
+    color: #73848e;
+    font: {
+        family: $main_font;
+        size: 14px;
+        weight: 400;
+    }
+    line-height: 20px;
+    width: 269px;
+    height: 55px;
+    border-radius: 0px;
+    padding: 0px;
+
+    &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 0;
+        z-index: 1;
+        border-style: solid;
+        border-width: 0 0 17px 18px;
+        border-color: transparent transparent  $dark_text transparent;
+        top: -17px;
+        left: 88%;
+        margin-left: -9px;
+    }  
+
+    .bubble_image {
+        position: absolute;
+        right: 8%;
+        top: 35%;
+    }
+
+    input {
+        width: 211px;
+        height: 55px;
+    }
+}

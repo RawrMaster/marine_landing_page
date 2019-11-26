@@ -1,0 +1,917 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap");
+.blue_box .left .back_image {
+  -webkit-box-shadow: 6px 0px 16px 6px rgba(0, 0, 0, 0.36), 0px 8px 8px -3px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 6px 0px 16px 6px rgba(0, 0, 0, 0.36), 0px 8px 8px -3px rgba(0, 0, 0, 0.8);
+  -o-box-shadow: 6px 0px 16px 6px rgba(0, 0, 0, 0.36), 0px 8px 8px -3px rgba(0, 0, 0, 0.8);
+  -ms-box-shadow: 6px 0px 16px 6px rgba(0, 0, 0, 0.36), 0px 8px 8px -3px rgba(0, 0, 0, 0.8);
+  box-shadow: 6px 0px 16px 6px rgba(0, 0, 0, 0.36), 0px 8px 8px -3px rgba(0, 0, 0, 0.8);
+}
+
+.blue_box .left .front_image {
+  -webkit-box-shadow: -27px 1px 28px -4px rgba(0, 0, 0, 0.5), 0px 8px 8px -3px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: -27px 1px 28px -4px rgba(0, 0, 0, 0.5), 0px 8px 8px -3px rgba(0, 0, 0, 0.8);
+  -o-box-shadow: -27px 1px 28px -4px rgba(0, 0, 0, 0.5), 0px 8px 8px -3px rgba(0, 0, 0, 0.8);
+  -ms-box-shadow: -27px 1px 28px -4px rgba(0, 0, 0, 0.5), 0px 8px 8px -3px rgba(0, 0, 0, 0.8);
+  box-shadow: -27px 1px 28px -4px rgba(0, 0, 0, 0.5), 0px 8px 8px -3px rgba(0, 0, 0, 0.8);
+}
+
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+/* ---------------   Header Styles -------------------  */
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+.marine {
+  height: auto;
+  color: #0b2b33;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.call_us {
+  text-align: right;
+  margin: 20px 0;
+  color: #0b2b33;
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.social a {
+  padding: 0 7px;
+}
+
+.social a:hover {
+  text-decoration-line: none;
+}
+
+.slash {
+  margin: 0 6px;
+}
+
+/* ---------------------------------------------------  */
+/* -----------------   Navigation --------------------  */
+/* ---------------------------------------------------  */
+.navigation {
+  padding-top: 15px;
+  background-color: #accdda;
+}
+
+.navigation nav ul li {
+  list-style-type: none;
+}
+
+.navigation nav ul li img {
+  padding-left: 10px;
+}
+
+.navigation nav ul li a {
+  padding-right: 40px;
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-weight: 400;
+  color: #23323a;
+  text-transform: uppercase;
+}
+
+.navigation nav ul li a:hover {
+  color: #008fd5;
+  text-decoration-line: none;
+}
+
+/* ---------------------------------------------------  */
+/* -----------------   Search form --------------------  */
+/* ---------------------------------------------------  */
+.search {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  position: absolute;
+  right: 140px;
+  top: 120px;
+}
+
+.popup .close {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  position: absolute;
+  right: -25px;
+  top: 10px;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.search_bubble {
+  position: relative;
+  background-color: #23323a;
+  /* text */
+  color: #73848e;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  width: 269px;
+  height: 55px;
+  border-radius: 0px;
+  padding: 0px;
+}
+
+.search_bubble:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  z-index: 1;
+  border-style: solid;
+  border-width: 0 0 17px 18px;
+  border-color: transparent transparent #23323a transparent;
+  top: -17px;
+  left: 88%;
+  margin-left: -9px;
+}
+
+.search_bubble .bubble_image {
+  position: absolute;
+  right: 8%;
+  top: 35%;
+}
+
+.search_bubble input {
+  width: 211px;
+  height: 55px;
+}
+
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+/* ------------------  Footer Styles -----------------  */
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+.footer {
+  /* ---------------------------------------------------  */
+  /* ------------------  Tweet Styles ------------------  */
+  /* ---------------------------------------------------  */
+}
+
+.footer .tweet {
+  background-color: #008fd5;
+  height: 120px;
+  /* -------- main  text -------- */
+  /* ----- @circles, by Quill ---- */
+  /* ----- 5 minutes ago ---- */
+}
+
+.footer .tweet p {
+  color: #ebebeb;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  display: inline;
+}
+
+.footer .tweet span {
+  color: #bbdbef;
+  font-family: "Open Sans";
+  font-style: italic;
+}
+
+.footer .tweet h4 {
+  color: #bbdbef;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-style: italic;
+}
+
+.footer .tweet button {
+  margin: auto 7px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------  */
+/* -------------------  Footer Info ------------------  */
+/* ---------------------------------------------------  */
+.footer_info {
+  border: 1px solid rgba(245, 245, 245, 0.08);
+  background-color: #19242a;
+}
+
+.footer_info .footer_marine {
+  margin: 15px 0;
+}
+
+.footer_info .text img {
+  margin-right: 20px;
+}
+
+.footer_info .text p {
+  color: #7ca1b3;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.footer_info .text span {
+  color: #bdd2dc;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-style: italic;
+}
+
+.footer_info .text h2 {
+  color: #547e93;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.footer_info .text h3 {
+  margin: 20px 0;
+  color: #7ca1b3;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.footer_info .text h6 {
+  color: #7ca1b3;
+  font-family: "Open Sans";
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.footer_info .text hr {
+  width: 271px;
+  background-color: #23323a;
+}
+
+.copyright {
+  height: 90px;
+  background-color: #141d22;
+}
+
+.copyright p {
+  color: #547e93;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+/* ---------------   Slide Styles --------------------  */
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+.slide {
+  background: url("../img/slide/carousel.png") center;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.slide .arrow_right {
+  position: absolute;
+  right: 0;
+  padding: 15% 0;
+}
+
+.slide .arrow_left {
+  position: absolute;
+  left: 0;
+  padding: 15% 0;
+}
+
+.slide .arrow_left button, .slide .arrow_right button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.natural_power figure {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+
+.natural_power h1 {
+  padding-bottom: 50px;
+  margin: 0;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 82px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -1.04px;
+}
+
+.natural_power h2 {
+  width: 380px;
+  padding: 5px 0;
+  margin-bottom: 130px;
+  border-top: 3px double #fff;
+  border-bottom: 3px double #fff;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+/* ---------------   Services styles -----------------  */
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+.services {
+  height: 238px;
+  background-color: #12b4c3;
+  background-image: linear-gradient(to top, #008fd5 8%, rgba(0, 143, 213, 0.45) 59%, rgba(255, 255, 255, 0) 100%);
+}
+
+.services h2 {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.services h3 {
+  color: #8cd9ff;
+  font-family: "Open Sans";
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.services figure {
+  padding-top: 42px;
+  text-align: center;
+}
+
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+/* ---------------  Projects Styles ------------------  */
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+.projects {
+  padding-bottom: 30px;
+  background-color: #2a3b45;
+}
+
+.projects .info {
+  padding: 0;
+  border: 1px solid #23323a;
+}
+
+.projects .info:hover {
+  background-color: #2f424d;
+}
+
+.projects h2 {
+  padding-top: 40px;
+  color: #c4d3de;
+  font-family: "Open Sans";
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.projects h3 {
+  padding-bottom: 40px;
+  color: #658190;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.projects h4, .projects h5 {
+  padding-left: 20px;
+}
+
+.projects h4 {
+  color: #f5f7f8;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.projects h5 {
+  color: #97a4ad;
+  font-family: "Open Sans";
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.projects .likes button {
+  /* for button text */
+  color: #b0bac0;
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-weight: 300;
+  /*-----------------*/
+  margin-bottom: 20px;
+  padding-left: 30px;
+  width: 45px;
+  height: 20px;
+  border: none;
+  background: url("../img/projects/heart_grey.png") no-repeat;
+}
+
+.projects .likes button:hover {
+  background: url("../img/projects/heart_red.png") no-repeat;
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+/* --------------  Call To Action Styles -------------  */
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+.call_to_action {
+  border: 1px solid rgba(101, 103, 104, 0.2);
+  background-color: #fcfcfc;
+}
+
+.call_to_action h2 {
+  padding: 59px 0;
+  color: #23323a;
+  font-family: "Open Sans";
+  font-size: 34px;
+  font-weight: 300;
+  letter-spacing: -0.95px;
+}
+
+.call_to_action h2 span {
+  color: #008fd5;
+}
+
+.call_to_action button {
+  margin: 47px 0;
+  border: none;
+  width: 200px;
+  height: 61px;
+  background-color: #008fd5;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.call_to_action button:hover {
+  background-color: #21a9ec;
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+/* -------------------  Posts Styles -----------------  */
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+.posts {
+  background-color: #fff;
+}
+
+.posts figure {
+  margin-left: -15px;
+}
+
+.posts h2 {
+  color: #23323a;
+  font-family: "Open Sans";
+  font-size: 22px;
+  font-weight: 400;
+  padding: 24px 20px;
+}
+
+.posts .recent_posts {
+  text-align: center;
+  background-color: #fff;
+}
+
+.posts .recent_posts h3 {
+  color: #008fd5;
+  font-family: "Open Sans";
+  font-size: 48px;
+  font-weight: 300;
+}
+
+.posts .recent_posts h6 {
+  color: #23323a;
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.posts .recent_posts h4 {
+  color: #008fd5;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.posts .recent_posts p {
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.posts .recent_posts nav ul li {
+  display: inline;
+}
+
+.posts .recent_posts nav ul li img {
+  padding-left: 10px;
+}
+
+.posts .recent_posts nav ul li a {
+  color: #23323a;
+  font-family: "Open Sans";
+  font-size: 10px;
+  font-weight: 400;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+
+.posts .recent_posts nav ul li a:hover {
+  color: #008fd5;
+  text-decoration-line: none;
+}
+
+.posts .recent_posts h4, .posts .recent_posts p {
+  text-align: left;
+}
+
+.posts .accordeon {
+  /*
+        * Animation Variables
+        */
+  /* Basic Accordion Styles */
+  /* 
+        * Size Variations
+        */
+}
+
+.posts .accordeon .wrapper {
+  margin-left: 50px;
+  /* Radio Inputs */
+  /* Labels */
+  /* Panel Content */
+}
+
+.posts .accordeon .wrapper input[name='panel'] {
+  display: none;
+}
+
+.posts .accordeon .wrapper label {
+  border-top: 1px solid #ebeef0;
+  border-bottom: 1px solid #ebeef0;
+  color: #23323a;
+  cursor: pointer;
+  padding: 15px;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.posts .accordeon .wrapper label:after {
+  position: absolute;
+  left: 22px;
+  content: '';
+  height: 43px;
+  width: 43px;
+  background: url("../img/posts/closed.png") no-repeat center;
+  text-align: center;
+  border-left: 0;
+  border-right: 1px solid #ebeef0;
+  border-bottom: 1px solid #ebeef0;
+  border-top: 1px solid #ebeef0;
+}
+
+.posts .accordeon .wrapper label:hover {
+  color: #008fd5;
+}
+
+.posts .accordeon .wrapper input:checked + label:after {
+  border-left: 1px solid #ebeef0;
+  border-right: 1px solid #ebeef0;
+  content: '';
+  background: url("../img/posts/open.png") no-repeat center;
+}
+
+.posts .accordeon .wrapper .a_content {
+  overflow: hidden;
+  height: 0px;
+  position: relative;
+  color: #73848e;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  transition: height 0.4s cubic-bezier(0.865, 0.14, 0.095, 0.87);
+}
+
+.posts .accordeon .wrapper .a_content .a_body {
+  height: auto;
+}
+
+.posts .accordeon input[name='panel']:checked ~ .a_content {
+  height: 170px;
+}
+
+.posts .people_say .quotes {
+  margin-top: 25px;
+  padding: 0;
+}
+
+.posts .people_say .bubble {
+  position: relative;
+  background-color: #23323a;
+  padding: 0px;
+  width: auto;
+}
+
+.posts .people_say .bubble h3 {
+  padding: 0 15px 0 15px;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.posts .people_say .bubble h6 {
+  padding: 0 15px 0 15px;
+  color: #8cd9ff;
+  font-family: "Open Sans";
+  font-size: 10px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.posts .people_say .bubble:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  z-index: 1;
+  border-style: solid;
+  border-width: 20px 20px 0 0;
+  border-color: #23323a transparent transparent transparent;
+  bottom: -20px;
+  left: 83%;
+  margin-left: -10px;
+}
+
+.posts .people_say h3 {
+  color: #008fd5;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.posts .people_say p {
+  color: #45484a;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+/* -----------------  Blue Box Styles ----------------  */
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+.blue_box {
+  background: url("../img/blue-box/bg_image.png") center;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.blue_box .right {
+  margin: 60px 0;
+}
+
+.blue_box .right h2 {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 22px;
+  font-weight: 300;
+  display: inline-block;
+}
+
+.blue_box .right p {
+  margin-left: 90px;
+  color: #8cd9ff;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.blue_box .right hr {
+  background-color: rgba(140, 217, 255, 0.8);
+}
+
+.blue_box .right img {
+  padding: 0 20px;
+}
+
+.blue_box .left {
+  margin: 60px 0;
+}
+
+.blue_box .left .back_image {
+  margin-top: 40px;
+  position: absolute;
+}
+
+.blue_box .left .back_image:hover {
+  z-index: 3;
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.blue_box .left .front_image {
+  margin-left: 154px;
+  position: absolute;
+  z-index: 2;
+}
+
+.blue_box .left .keyboard_mouse {
+  padding-top: 270px;
+}
+
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+/* -----------------  Our Team Styles ----------------  */
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+.team {
+  background: url("../img/team/bg_image.png") center;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 40px;
+}
+
+.team h2 {
+  text-align: center;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.team .team_member {
+  text-align: center;
+  padding-top: 47px;
+  padding-bottom: 60px;
+}
+
+.team .team_member h3 {
+  padding-top: 25px;
+  color: #f5f5f5;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.team .team_member span {
+  color: #2691ac;
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.team .team_member p {
+  color: #b9c3ca;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.team .team_member hr {
+  width: 70px;
+  margin: 20px auto;
+  background-color: rgba(185, 195, 202, 0.5);
+}
+
+.team .team_member #team_member_photo {
+  border: 5px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+/* ------------------  Cliens Styles -----------------  */
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+.clients {
+  height: auto;
+}
+
+.clients img {
+  padding: 15px 0;
+}
+
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+/* ----------------  Contacts Styles -----------------  */
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+.contacts {
+  background: url("../img/contacts/bg_image.png") center;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.contacts h2 {
+  margin: 43px 0;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.contacts form input {
+  margin: 5px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+}
+
+.contacts form .name, .contacts form .e-mail {
+  width: 549px;
+  height: 45px;
+  padding: 2px;
+}
+
+.contacts form .message {
+  width: 549px;
+  height: 95px;
+  padding: 2px;
+}
+
+.contacts form .send, .contacts form .clear {
+  margin: 30px 0;
+  width: 119px;
+  height: 45px;
+  background-color: #64737f;
+  border: 1px solid #707e89;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #fff;
+}

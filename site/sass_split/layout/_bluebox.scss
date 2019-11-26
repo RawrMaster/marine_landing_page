@@ -1,0 +1,79 @@
+
+
+
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+/* -----------------  Blue Box Styles ----------------  */
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+
+.blue_box {
+
+    @include background("../img/blue-box/bg_image.png");
+
+    .right {
+        margin: 60px 0;
+        
+        h2 {
+            color: $white;
+            font: {
+                family: $main_font;
+                size: 22px;
+                weight: 300;
+            }    
+            display: inline-block;
+        }
+
+        p {
+            margin-left: 90px;
+            color: #8cd9ff;
+            font: {
+                family: $main_font;
+                size: 13px;
+                weight: 400;
+            }    
+        }
+
+        hr {
+            background-color:rgba(140,217,255,0.8);
+        }
+
+        img {
+            padding: 0 20px; 
+        }
+
+    }
+
+    .left {
+        margin: 60px 0;
+        
+        .back_image {
+            margin-top: 40px;
+            position:absolute;
+        //    z-index: 1;
+        //    transform: scale(1);
+        //    transition: 0.2s;
+
+            @extend %blue_box_back_image_shadow;
+
+            &:hover {
+                z-index: 3;
+                transform: scale(1.1);
+                transition: 0.2s;
+            }
+        }
+
+        .front_image {
+            margin-left: 154px;
+            position:absolute;
+            z-index: 2;
+
+            @extend %blue_box_front_image_shadow;
+
+        }
+
+        .keyboard_mouse {
+            padding-top: 270px;
+        }
+    }
+}

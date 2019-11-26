@@ -1,0 +1,50 @@
+
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+/* --------------  Call To Action Styles -------------  */
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+
+.call_to_action {
+
+    border: 1px solid rgba(101, 103, 104, 0.2);
+    background-color: #fcfcfc;
+
+    h2 {
+        padding: 59px 0;
+        color: $dark_text;
+        font: {
+            family: $main_font;
+            size: 34px;
+            weight: 300;
+        }    
+
+         span {
+            color: $highlight_color;
+         }
+
+         letter-spacing: -0.95px;
+    }
+
+    button {
+        margin: 47px 0;
+        border:none;
+        width: 200px;
+        height: 61px;
+        background-color: $highlight_color;
+        color: $white;
+        font: {
+            family: $main_font;
+            size: 12px;
+            weight: 300;
+        }    
+        text-transform: uppercase;
+
+        &:hover{
+            background-color: #21a9ec;
+            cursor: $cursor;
+
+        }
+    }
+}
+

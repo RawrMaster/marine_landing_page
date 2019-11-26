@@ -1,0 +1,14 @@
+
+// Mixins
+
+@mixin background-size {
+    -moz-background-size: $size; 
+    -webkit-background-size: $size; 
+    -o-background-size: $size; 
+    background-size: $size; 
+}
+
+@mixin background($file) {
+    background: url($file) center;
+    @include background-size();
+}

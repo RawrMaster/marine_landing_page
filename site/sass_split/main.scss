@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+@import "helpers/variables", 
+        "helpers/placeholders",
+        "helpers/mixins",
+        "layout/header",
+        "layout/footer",
+        "layout/slide",
+        "layout/services",
+        "layout/projects",
+        "layout/call_to_action",
+        "layout/posts",
+        "layout/bluebox",
+        "layout/team",
+        "layout/clients",
+        "layout/contacts";
+
+
+
+* {
+ padding:0;
+ margin:0;
+}
+
+body {
+    background-color: $white;
+}
+

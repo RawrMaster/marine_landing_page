@@ -1,0 +1,60 @@
+
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+/* ----------------  Contacts Styles -----------------  */
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+
+.contacts {
+
+    @include background("../img/contacts/bg_image.png");
+
+    h2 {
+        margin: 43px 0;
+        color: $white;
+        font: {
+            family: $main_font;
+            size: 30px;
+            weight: 300;
+        }
+    }
+
+    form {
+
+        input {
+            margin: 5px;
+            background-color: rgba(255, 255, 255, 0.6);
+            border: none;
+        }
+
+        .name, .e-mail {
+            width:549px;
+            height: 45px;
+            padding: 2px;
+        }
+
+        .message {
+            width:549px;
+            height: 95px;
+            padding: 2px;
+        }
+
+        .send, .clear {
+            margin: 30px 0;
+            width: 119px;
+            height: 45px;
+            background-color: #64737f;
+            border: 1px solid #707e89;
+
+            color: $white;
+            font: {
+                family: $main_font;
+                size: 13px;
+                weight: 400;
+            }    
+            text-transform: uppercase;
+            cursor: $cursor;
+        }
+
+    }   
+}   

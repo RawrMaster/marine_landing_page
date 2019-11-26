@@ -1,0 +1,274 @@
+
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+/* -------------------  Posts Styles -----------------  */
+/* ---------------------------------------------------  */
+/* ---------------------------------------------------  */
+
+.posts {
+    background-color: $white;
+
+    figure {
+        margin-left: -15px;
+    }
+    
+    h2 {
+        color: $dark_text;
+        font: {
+            family: $main_font;
+            size: 22px;
+            weight: 400;
+        }    
+        padding: 24px 20px;
+    }
+
+    .recent_posts {
+
+        text-align: center;
+        background-color: $white;
+
+        h3 {
+            color: $highlight_color;
+            font: {
+                family: $main_font;
+                size: 48px;
+                weight: 300;
+            }
+        }
+
+        h6 {
+            color: $dark_text;
+            font: {
+                family: $main_font;
+                size: 11px;
+                weight: 400;
+            }
+            text-transform: uppercase;
+        }
+
+        h4 {
+            color: $highlight_color;
+            font: {
+                family: $main_font;
+                size: 18px;
+                weight: 400;
+            }
+        }
+
+        p {
+            font: {
+                family: $main_font;
+                size: 13px;
+                weight: 300;
+            }
+        }
+
+        nav {
+            ul {
+                li {    
+               // list-style-type: square;
+                    display: inline;
+                    img {
+                        padding-left: 10px;
+                        
+                    }
+                    
+                    a {
+                        color: $dark_text;
+                        font: {
+                            family: $main_font;
+                            size: 10px;
+                            weight: 400;
+                            
+                        }
+                        padding: 0 10px;
+                        text-transform: uppercase;
+                    &:hover {
+                        color: $highlight_color;
+                        text-decoration-line: none;
+                    }
+                        
+                    }
+    
+                }
+            }
+        }
+
+        h4, p {
+            text-align: left;
+        }
+
+    }
+
+    .accordeon {
+
+        /*
+        * Animation Variables
+        */
+        
+        
+        /* Basic Accordion Styles */
+        .wrapper {
+                        
+          margin-left: 50px;
+            
+          /* Radio Inputs */
+          input[name='panel'] {
+            display:none;
+            
+          }
+        
+          /* Labels */
+          label {
+            border-top: $label_border;
+            border-bottom: $label_border;
+            color: $dark_text;
+            cursor: $cursor;
+            padding: 15px;
+            font: {
+              family: $main_font;
+              size: 13px;
+              weight: 400;
+            }  
+            line-height: 20px;
+            
+            &:after {
+              position: absolute;
+              left: 22px;
+              content: '';
+              height: 43px;
+              width: 43px;
+              background: url("../img/posts/closed.png") no-repeat center;
+              text-align: center;
+              border-left:  0;
+              border-right: $label_border;
+              border-bottom: $label_border;
+              border-top: $label_border;        
+              
+            }
+            
+            &:hover {
+              color: $highlight_color;
+            }
+              
+          }
+          
+          input:checked + label {
+            
+            &:after {
+                border-left:  $label_border;
+                border-right: $label_border;
+                content:'';
+                background: url("../img/posts/open.png") no-repeat center;
+            }
+            
+          }
+          
+          /* Panel Content */
+          .a_content {
+            overflow: hidden;
+            height: 0px;
+            position: relative;
+            color: #73848e;
+            font: {
+              family: $main_font;
+              size: 13px;
+              weight: 400;
+            }  
+            line-height: 20px;
+            transition: height $timing $ease;
+            
+             
+            .a_body {
+              height:auto;
+            }
+            
+          }
+           
+        }
+        
+        
+        /* 
+        * Size Variations
+        */
+        
+        input[name='panel']:checked ~ .a_content{
+          height: 170px;
+        }
+    }
+
+    
+    
+    .people_say{
+
+        .quotes {
+            margin-top: 25px;
+            padding: 0;
+        }
+
+        .bubble {
+            position: relative;
+            background-color: $dark_text;
+            padding: 0px;
+            width:auto;
+
+            h3 {
+                padding: 0 15px 0 15px;
+                color: $white;
+                font: {
+                    family: $main_font;
+                    size: 18px;
+                    weight: 300;
+                }
+            }
+
+            h6 {
+                padding: 0 15px 0 15px;
+                color: #8cd9ff;
+                font: {
+                    family: $main_font;
+                    size: 10px;
+                    weight: 300;
+                }
+                text-transform: uppercase;
+            }
+            
+
+        }
+
+        .bubble:after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 0;
+            z-index: 1;
+            border-style: solid;
+            border-width: 20px 20px 0 0;
+            border-color: $dark_text transparent transparent transparent;
+            bottom: -20px;
+            left: 83%;
+            margin-left: -10px;
+        }
+
+        h3 {
+            color: $highlight_color;
+            font: {
+                family: $main_font;
+                size: 14px;
+                weight: 400;
+            }
+            line-height: 20px;
+        }
+
+        p {
+            color: #45484a;
+            font: {
+                family: $main_font;
+                size: 13px;
+                weight: 400;
+            }
+            line-height: 20px;
+        }
+    }
+
+}
